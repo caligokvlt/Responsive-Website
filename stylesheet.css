@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    background-color: red;
+}
+
+.grid-container {
+    background-color: yellow;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding: 2vh;
+    grid-template-areas: "section-one section-one section-one section-two"
+                         "section-three section-three section-four section-four"
+                         "footer footer footer footer";
+    height: 74vh;
+    margin: 2vh;
+    
+}
+nav {
+    background-color: cyan;
+    display: flex;
+    justify-content: space-around;
+    height: 7vh;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: brown;
+    height: 10vh;
+    display: flex;
+}
+
+header, h1 {
+    margin: 0;
+}
+
+h1 {
+    margin: auto;
+    align-content: center;
+}
+
+#one, #two, #three, #four, #footer, .grid-container, a {
+    border: solid 1px black;
+}
+
+a {
+    align-content: center;
+    align-items: baseline;
+    margin: 1vh;
+    border-radius:  15px;
+    flex-basis: 15vh;
+    text-align: center;
+}
+
+#one {
+    grid-area: section-one;
+}
+#two {
+    grid-area: section-two;
+}
+#three {
+    grid-area: section-three;
+}
+#four {
+    grid-area: section-four;
+}
+
+#footer {
+    grid-area: footer;
+}
